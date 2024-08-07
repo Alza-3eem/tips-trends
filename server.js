@@ -1,3 +1,5 @@
+// DON'T FORGET TO UPDATE TO SERVE STATIC FILES FROM THE 'PUBLIC' FOLDER
+
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');

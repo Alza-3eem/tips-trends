@@ -1,7 +1,12 @@
+* {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -11,16 +16,19 @@ header {
     background-color: #9863c7;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem;
     box-sizing: border-box;
     font-size: 36px;
+    margin-bottom: 5px;
+    border-bottom: 10px solid rgb(56, 56, 56);
 }
 
 .row-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -29,9 +37,57 @@ header {
     border-radius: 15px;
     margin-left: 40px;
     margin-right: 40px;
-    padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    width: 50%;
-    height: 300px;
+    height: 320px;
+    box-shadow: 4px 4px 4px grey;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-weight: bold;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    align-self: center;
+    font-size: 14px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#tipsList ul {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    list-style-type: none;
+    margin-left: 15%;
+    margin-right: 22%;
+}
+
+#tipsList ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#tipsList ul li:last-child {
+    border-bottom: none;
+}
+
+ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.key {
+    font-weight: bold;
 }
